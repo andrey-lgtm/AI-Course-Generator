@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import { Provider } from "@/components/Providers";
+import { Toaster } from "@/components/ui/toaster";
 
 const lexend = Lexend({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Provider>
           <Navbar />
           {children}
+          <Toaster />
         </Provider>
       </body>
     </html>

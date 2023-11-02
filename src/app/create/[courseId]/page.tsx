@@ -46,7 +46,7 @@ const CreateChapters = async ({ params: { courseId } }: Props) => {
           the button to confirm and continue.
         </div>
       </div>
-      <ConfirmChapters />
+      <ConfirmChapters course={course} />
     </div>
   );
 };
